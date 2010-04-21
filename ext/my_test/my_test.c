@@ -7,8 +7,8 @@ static VALUE t_init(VALUE self) {
 }
 
 static VALUE t_add_one(VALUE self, VALUE obj) {
-  long i = FIX2INT(obj);
-  return INT2FIX(i+1);
+  long i = FIX2LONG(obj);
+  return LONG2FIX(i+1);
 }
 
 void Init_my_test() {
